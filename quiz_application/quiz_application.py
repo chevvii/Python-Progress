@@ -1,5 +1,5 @@
 # FUNCTIONING
-
+print("Dari HP")
 # Sub 3 scoring
 def scoring_display(signal):
     pass
