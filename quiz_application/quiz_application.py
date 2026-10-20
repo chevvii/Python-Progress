@@ -1,5 +1,6 @@
+import scoring_formulas as sf
 # FUNCTIONING
-print("Dari HP")
+
 # Sub 3 scoring
 def scoring_display(signal):
     pass
@@ -26,8 +27,18 @@ def scoring_input():  #
     pass  # Pass
     score_formula = []
     while True:
-        print("Scoring formula selection: ")
-        print("")
+        print("Scoring formula selections: ")
+        choice = input("Would you like basic selections or advanced selections? (b/a): ")
+        if choice == 'b':
+            print("Scoring formula selections: ")
+            print("Basic 1: Count point by how much right questions.")
+            print("Basic 2: Count point by subtracting right questions with wrong questions.")
+            print("Basic 3: Basic 2, but with 2* penalty.")
+            print("Basic 4: Count point by using 0-100 scale.")
+            print("Basic 5: Grants extra bonus points if the score meets or exceeds the passing threshold (KKM).")
+
+        elif choice == 'a':
+            print("Advanced scoring formula selections: ")
 def scoring_edit():
     pass  # Pass
 
